@@ -1,4 +1,4 @@
-Spring官方教程http://spring.io/guides/gs/rest-service/的Kotlin实现
+Spring官方教程 http://spring.io/guides/gs/rest-service/ 的Kotlin实现
 
 * 模型层：Greeting.kt
   包含一个简单Kotlin对象（POKO?)。
