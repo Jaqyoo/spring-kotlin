@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicLong
  * Created by tao on 17-3-6.
  */
 @RestController
-open class GreetingContrller {
+open class GreetingController {
     val template = "Hello, %s"
     val counter = AtomicLong()
 
