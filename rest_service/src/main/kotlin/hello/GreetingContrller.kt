@@ -10,12 +10,12 @@ import java.util.concurrent.atomic.AtomicLong
  * Created by tao on 17-3-6.
  */
 @RestController
-open class GreetingController {
+class GreetingController {
     val template = "Hello, %s"
     val counter = AtomicLong()
 
     @RequestMapping("/greeting")
-    open fun greeting(@RequestParam(value = "name", defaultValue = "World") name:String): Greeting {
+    fun greeting(@RequestParam(value = "name", defaultValue = "World") name:String): Greeting {
         return Greeting(counter.incrementAndGet(), String.format(template, name))
     }
 }
